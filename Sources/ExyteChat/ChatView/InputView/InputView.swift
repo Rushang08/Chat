@@ -244,6 +244,8 @@ struct InputView: View {
                         sendButton
                             .disabled(!state.canSend)
                     } else {
+                        sendButton
+                            .disabled(true)
                         // recordButton
                         //     .highPriorityGesture(dragGesture())
                     }
