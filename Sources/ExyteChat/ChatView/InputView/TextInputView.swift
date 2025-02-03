@@ -25,7 +25,7 @@ struct TextInputView: View {
             }
             .foregroundColor(theme.colors.inputText)
             .padding(.vertical, 10)
-            .padding(.leading, !availableInput.isMediaAvailable ? 12 : 0)
+            .padding(.leading, !availableInput.isMediaAvailable ? 12 : 12)
             .onTapGesture {
                 globalFocusState.focus = .uuid(inputFieldId)
             }
