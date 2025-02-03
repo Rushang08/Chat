@@ -131,10 +131,9 @@ struct InputView: View {
                     RoundedRectangle(cornerRadius: 18)
                         .fill(theme.colors.inputBG)
                 }
-
-                rightOutsideButton
+                //rightOutsideButton
             }
-            .padding(.horizontal, 12)
+            .padding(.horizontal, 15)
             .padding(.vertical, 8)
         }
         .background(backgroundColor)
