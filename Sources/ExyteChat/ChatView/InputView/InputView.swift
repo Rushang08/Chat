@@ -243,9 +243,12 @@ struct InputView: View {
                     if state.canSend || availableInput == .textOnly || availableInput == .textAndMedia {
                         sendButton
                             .disabled(!state.canSend)
+                            .opacity(1) // Use opacity instead of alpha for SwiftUI
                     } else {
                         sendButton
                             .disabled(true)
+                            .opacity(0.5) // Use opacity instead of alpha for SwiftUI
+                        
                         // recordButton
                         //     .highPriorityGesture(dragGesture())
                     }
