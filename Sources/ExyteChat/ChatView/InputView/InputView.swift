@@ -131,9 +131,9 @@ struct InputView: View {
                     RoundedRectangle(cornerRadius: 18)
                         .fill(theme.colors.inputBG)
                 }
-                //rightOutsideButton
+                rightOutsideButton
             }
-            .padding(.horizontal, 15)
+            .padding(.horizontal, 20)
             .padding(.vertical, 8)
         }
         .background(backgroundColor)
@@ -244,8 +244,8 @@ struct InputView: View {
                         sendButton
                             .disabled(!state.canSend)
                     } else {
-                        recordButton
-                            .highPriorityGesture(dragGesture())
+                        // recordButton
+                        //     .highPriorityGesture(dragGesture())
                     }
                 }
                 .compositingGroup()
