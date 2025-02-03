@@ -9,9 +9,9 @@ public struct User: Codable, Identifiable, Hashable {
     public let name: String
     public let avatarURL: URL?
     public let isCurrentUser: Bool
-    public let deviceToken: String?
+    public let deviceToken: String? = ""
 
-    public init(id: String, name: String, avatarURL: URL?, isCurrentUser: Bool, deviceToken:String?) {
+    public init(id: String, name: String, avatarURL: URL?, isCurrentUser: Bool, deviceToken:String? = "") {
         self.id = id
         self.name = name
         self.avatarURL = avatarURL
