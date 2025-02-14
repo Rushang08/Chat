@@ -283,7 +283,7 @@ struct InputView: View {
                     theme.images.reply.replyToMessage
                         .foregroundStyle(theme.colors.sendButtonBackground)
                     Capsule()
-                        .foregroundColor(theme.colors.messageMyBG)
+                        .foregroundColor(Color.purple)
                         .frame(width: 2)
                     VStack(alignment: .leading) {
                         Text(localization.replyToText + " " + message.user.name)
